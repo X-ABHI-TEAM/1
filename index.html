@@ -138,6 +138,28 @@
             box-shadow: 0 6px 20px rgba(255, 75, 43, 0.6);
         }
 
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 25px;
+            border-radius: 50px;
+            border: none;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            font-size: 1.1rem;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
         /* Modal styles */
         .modal {
             display: none;
@@ -264,6 +286,11 @@
             color: white;
         }
 
+        .whatsapp-btn {
+            background: #25D366;
+            color: white;
+        }
+
         .download-app-btn {
             background: linear-gradient(to right, #00b09b, #96c93d);
             color: white;
@@ -341,6 +368,10 @@
 
             <h1>Download Our Amazing Apps</h1>
             <p class="subtitle">Get access to our premium applications with just a few simple steps</p>
+
+            <div class="search-container">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search for apps...">
+            </div>
         </header>
 
         <div class="apps-grid" id="appsContainer">
@@ -379,6 +410,15 @@
                 <div class="step" id="step3">
                     <div class="step-number">3</div>
                     <div class="step-content">
+                        <div class="step-title">Join WhatsApp Channel</div>
+                        <p>Get instant updates and direct links</p>
+                        <button class="step-button whatsapp-btn" id="whatsappBtn">Join WhatsApp Channel</button>
+                    </div>
+                </div>
+
+                <div class="step" id="step4">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
                         <div class="step-title">Download the App</div>
                         <p>Get instant access to all features</p>
                         <button class="step-button download-app-btn" id="downloadAppBtn" disabled>Download App</button>
@@ -395,128 +435,144 @@
                 id: 1,
                 name: "CapCut Pro",
                 icon: "https://static.vecteezy.com/system/resources/previews/013/948/546/non_2x/capcut-logo-on-transparent-white-background-free-vector.jpg",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/capcutpro.apk"
             },
             {
                 id: 2,
                 name: "ChatGPT PRO",
                 icon: "https://upload.wikimedia.org/wikipedia/commons/1/13/ChatGPT-Logo.png",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/chatgptpro.apk"
             },
             {
                 id: 3,
                 name: "Canva Pro",
                 icon: "https://public.canva.site/logo/media/dfb96cc174513093cd6ed61489ccb750.svg",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/canvapro.apk"
             },
             {
                 id: 4,
                 name: "YouTube Premium",
                 icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/youtubepremium.apk"
             },
             {
                 id: 5,
                 name: "Hotstar Premium",
                 icon: "https://www.livemint.com/lm-img/img/2025/02/14/optimize/Screenshot_2025-02-14_065533_1739496378365_1739496389150.png",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/hotstarpaid.apk"
             },
             {
                 id: 6,
                 name: "Netflix Premium",
                 icon: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/netflixpremium.apk"
             },
             {
                 id: 7,
                 name: "Spotify Premium",
                 icon: "https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/f335ac0034f2786263380b40d44d4614ccfb2c30",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/spotify.apk"
             },
             {
                 id: 8,
                 name: "Tinder Premium",
                 icon: "https://static.vecteezy.com/system/resources/previews/023/986/672/non_2x/tinder-app-logo-tinder-app-logo-transparent-tinder-app-icon-transparent-free-free-png.png",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/tinderpremium.apk"
             },
             {
                 id: 9,
                 name: "Microsoft 365 Pro",
                 icon: "https://images.seeklogo.com/logo-png/62/2/microsoft-365-copilot-logo-png_seeklogo-621257.png",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/microsoft365.apk"
             },
             {
                 id: 10,
                 name: "Picsart Gold",
                 icon: "https://cdnblog.picsart.com/2021/07/icon-square-780x780.jpg",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/picsartgold.apk"
             },
             {
                 id: 11,
                 name: "Kuku FM Premium",
                 icon: "https://yt3.googleusercontent.com/lsp8P8t94oZP14kJZcVJ1CW78Xb2z5S1A-Z7ufGaQg_QFnhvaJY1044IeYGr1kOkAjiIicq4Zw=s900-c-k-c0x00ffffff-no-rj",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/kukufm.apk"
             },
             {
                 id: 12,
                 name: "DeepSeek Pro",
                 icon: "https://images.seeklogo.com/logo-png/61/2/deepseek-ai-icon-logo-png_seeklogo-611473.png",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/deepseekpro.apk"
             },
             {
                 id: 13,
                 name: "InShot Pro",
                 icon: "https://static.wikia.nocookie.net/logopedia/images/9/94/InShOt.png/revision/latest?cb=20191005001513",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/inshotpro.apk"
             },
             {
                 id: 14,
                 name: "KingMaster Pro",
-                icon: "https://static.wikia.nocookie.net/logo_editing/images/0/0e/KineMaster_App_Icon.png/revision/latest?cb=20241215141752",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                icon: "https://static.wikia.nocookie.net/logopedia/images/0/0e/KineMaster_App_Icon.png/revision/latest?cb=20241215141752",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/kingmasterpro.apk"
             },
             {
                 id: 15,
                 name: "Ai Fiesta Pro",
                 icon: "https://play-lh.googleusercontent.com/gSofeh60NzXlfonfkFW2oaxmtiYwsyyTciiOehoBSch4_X_noOVQhE4Z_X-qZLAEfgbJgNut20ukmcP-cSJv=w600-h300-pc0xffffff-pd",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/aifiestapro.apk"
             },
             {
                 id: 16,
                 name: "Gemini Pro",
                 icon: "https://static.vecteezy.com/system/resources/previews/055/687/055/non_2x/rectangle-gemini-google-icon-symbol-logo-free-png.png",
-                youtubeLink: "https://www.youtube.com/@hdvideohai",
-                instagramLink: "https://www.instagram.com/mentionmasti?igsh=em5hODJyaTNqYWVi",
+                youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+                instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+                whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
                 downloadLink: "https://example.com/download/geminipro.apk"
             }
         ];
@@ -527,21 +583,42 @@
         const closeModal = document.getElementById('closeModal');
         const subscribeBtn = document.getElementById('subscribeBtn');
         const followBtn = document.getElementById('followBtn');
+        const whatsappBtn = document.getElementById('whatsappBtn');
         const downloadAppBtn = document.getElementById('downloadAppBtn');
+        const searchInput = document.getElementById('searchInput');
 
         // Current app being downloaded
         let currentApp = null;
+        let isSearchUnlockMode = false;
+        let isSearchUnlocked = false;
+
+        const searchApp = {
+            id: 'search_unlock',
+            name: "Unlock Search",
+            icon: "🔒",
+            youtubeLink: "https://youtube.com/@apkrealmoney?si=vnfJo2zYrlpUKI0j",
+            instagramLink: "https://www.instagram.com/pihu_treand?igsh=NWo1ODB4NXl2Y3Bt",
+            whatsappLink: "https://whatsapp.com/channel/0029Vb7BuOZIyPtQ4y2RYX41",
+            downloadLink: "#" // No download, just unlock
+        };
 
         // Step completion status
         const stepsCompleted = {
             step1: false,
-            step2: false
+            step2: false,
+            step3: false
         };
 
         // Render app cards
-        function renderApps() {
+        function renderApps(appsToRender = apps) {
             appsContainer.innerHTML = '';
-            apps.forEach(app => {
+
+            if (appsToRender.length === 0) {
+                appsContainer.innerHTML = '<div style="grid-column: 1/-1; text-align: center; padding: 40px; font-size: 1.2rem; color: #666;">No apps found matching your search.</div>';
+                return;
+            }
+
+            appsToRender.forEach(app => {
                 const appCard = document.createElement('div');
                 appCard.className = 'app-card';
                 // Check if the icon is a URL (contains http/https) to render as image, otherwise as emoji
@@ -563,19 +640,49 @@
             });
         }
 
+        // Filter apps based on search
+        function filterApps(searchTerm) {
+            const term = searchTerm.toLowerCase().trim();
+            const filteredApps = apps.filter(app =>
+                app.name.toLowerCase().includes(term)
+            );
+            renderApps(filteredApps);
+        }
+
         // Open download modal
         function openDownloadModal(appId) {
-            currentApp = apps.find(app => app.id === appId);
+            // Determine if this is normal app download or search unlock
+            if (appId === 'search_unlock') {
+                currentApp = searchApp;
+                isSearchUnlockMode = true;
+                // Update specific text for search unlock
+                document.querySelector('.modal-title').textContent = "Unlock Search";
+                document.querySelector('#step4 .step-title').textContent = "Unlock Search";
+
+            } else {
+                currentApp = apps.find(app => app.id === appId);
+                isSearchUnlockMode = false;
+                // Reset text for normal app download
+                document.querySelector('.modal-title').textContent = "Download App";
+                document.querySelector('#step4 .step-title').textContent = "Download the App";
+            }
+
             if (!currentApp) return;
 
             // Reset steps
             stepsCompleted.step1 = false;
             stepsCompleted.step2 = false;
+            stepsCompleted.step3 = false;
             updateStepUI();
 
             // Show modal
             downloadModal.classList.add('active');
             document.body.style.overflow = 'hidden';
+
+            // If it's search unlock, blur background input to prevent typing
+            if (isSearchUnlockMode) {
+                searchInput.blur();
+            }
         }
 
         // Close download modal
@@ -602,15 +709,23 @@
                 step2Element.classList.remove('completed');
             }
 
+            // Update step 3
+            const step3Element = document.getElementById('step3');
+            if (stepsCompleted.step3) {
+                step3Element.classList.add('completed');
+            } else {
+                step3Element.classList.remove('completed');
+            }
+
             // Enable/disable download button
-            if (stepsCompleted.step1 && stepsCompleted.step2) {
+            if (stepsCompleted.step1 && stepsCompleted.step2 && stepsCompleted.step3) {
                 downloadAppBtn.classList.add('enabled');
                 downloadAppBtn.disabled = false;
-                downloadAppBtn.textContent = "Download Now";
+                downloadAppBtn.textContent = isSearchUnlockMode ? "Unlock Now" : "Download Now";
             } else {
                 downloadAppBtn.classList.remove('enabled');
                 downloadAppBtn.disabled = true;
-                downloadAppBtn.textContent = "Download App";
+                downloadAppBtn.textContent = isSearchUnlockMode ? "Unlock Search" : "Download App";
             }
         }
 
@@ -633,109 +748,166 @@
             }
         });
 
+        whatsappBtn.addEventListener('click', () => {
+            if (currentApp && currentApp.whatsappLink) {
+                window.open(currentApp.whatsappLink, '_blank');
+                stepsCompleted.step3 = true;
+                updateStepUI();
+            }
+        });
+
+        // Search Input Event Listeners
+        // Prevent typing if locked
+        searchInput.addEventListener('keydown', (e) => {
+            if (!isSearchUnlocked) {
+                e.preventDefault();
+                openDownloadModal('search_unlock');
+            }
+        });
+
+        // Trigger modal on click/focus if locked
+        searchInput.addEventListener('focus', (e) => {
+            if (!isSearchUnlocked) {
+                // Immediately blur to stop cursor
+                searchInput.blur();
+                openDownloadModal('search_unlock');
+            }
+        });
+
+        searchInput.addEventListener('click', (e) => {
+            if (!isSearchUnlocked) {
+                searchInput.blur();
+                openDownloadModal('search_unlock');
+            }
+        });
+
+        searchInput.addEventListener('input', (e) => {
+            // Only filter if unlocked
+            if (isSearchUnlocked) {
+                filterApps(e.target.value);
+            } else {
+                e.target.value = ''; // Clear input if somehow they typed
+            }
+        });
+
         downloadAppBtn.addEventListener('click', () => {
-            if (stepsCompleted.step1 && stepsCompleted.step2 && currentApp && currentApp.downloadLink) {
-                // Create download progress indicator
-                const progressContainer = document.createElement('div');
-                progressContainer.className = 'download-progress';
-                progressContainer.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 1001; text-align: center;';
+            if (stepsCompleted.step1 && stepsCompleted.step2 && stepsCompleted.step3) {
 
-                const progressText = document.createElement('div');
-                progressText.id = 'progressText';
-                progressText.style.cssText = 'margin-bottom: 10px; font-weight: bold;';
-                progressText.textContent = 'Download starting...';
+                if (isSearchUnlockMode) {
+                    // Unlock Search Logic
+                    isSearchUnlocked = true;
+                    closeDownloadModal();
 
-                const progressBar = document.createElement('div');
-                progressBar.style.cssText = 'width: 300px; height: 20px; background: #f0f0f0; border-radius: 10px; overflow: hidden;';
+                    // Show success message and focus search
+                    setTimeout(() => {
+                        alert("Search Unlocked! You can now search for apps.");
+                        searchInput.focus();
+                    }, 500);
 
-                const progressFill = document.createElement('div');
-                progressFill.id = 'progressFill';
-                progressFill.style.cssText = 'height: 100%; width: 0%; background: linear-gradient(to right, #4CAF50, #8BC34A); transition: width 0.3s ease;';
+                } else if (currentApp && currentApp.downloadLink) {
+                    // Normal Download Logic
+                    // Create download progress indicator
+                    const progressContainer = document.createElement('div');
+                    progressContainer.className = 'download-progress';
+                    progressContainer.style.cssText = 'position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 1001; text-align: center;';
 
-                progressBar.appendChild(progressFill);
-                progressContainer.appendChild(progressText);
-                progressContainer.appendChild(progressBar);
-                document.body.appendChild(progressContainer);
+                    const progressText = document.createElement('div');
+                    progressText.id = 'progressText';
+                    progressText.style.cssText = 'margin-bottom: 10px; font-weight: bold;';
+                    progressText.textContent = 'Download starting...';
 
-                // Simulate realistic download progress
-                let progress = 0;
-                const downloadInterval = setInterval(() => {
-                    // Random progress increment to make it feel realistic
-                    const increment = Math.random() * 5; // Random increment between 0-5%
-                    progress = Math.min(progress + increment, 100);
+                    const progressBar = document.createElement('div');
+                    progressBar.style.cssText = 'width: 300px; height: 20px; background: #f0f0f0; border-radius: 10px; overflow: hidden;';
 
-                    // Update progress display
-                    document.getElementById('progressFill').style.width = progress + '%';
+                    const progressFill = document.createElement('div');
+                    progressFill.id = 'progressFill';
+                    progressFill.style.cssText = 'height: 100%; width: 0%; background: linear-gradient(to right, #4CAF50, #8BC34A); transition: width 0.3s ease;';
 
-                    // Show different messages at different progress points
-                    if (progress < 20) {
-                        document.getElementById('progressText').textContent = 'Connecting to server...';
-                    } else if (progress < 40) {
-                        document.getElementById('progressText').textContent = 'Starting download...';
-                    } else if (progress < 60) {
-                        document.getElementById('progressText').textContent = 'Downloading...';
-                    } else if (progress < 80) {
-                        document.getElementById('progressText').textContent = 'Almost there...';
-                    } else if (progress < 95) {
-                        document.getElementById('progressText').textContent = 'Finishing up...';
-                    } else {
-                        document.getElementById('progressText').textContent = 'Download complete!';
-                    }
+                    progressBar.appendChild(progressFill);
+                    progressContainer.appendChild(progressText);
+                    progressContainer.appendChild(progressBar);
+                    document.body.appendChild(progressContainer);
 
-                    // When download reaches 100%, open the download link
-                    if (progress >= 100) {
-                        clearInterval(downloadInterval);
+                    // Simulate realistic download progress
+                    let progress = 0;
+                    const downloadInterval = setInterval(() => {
+                        // Random progress increment to make it feel realistic
+                        const increment = Math.random() * 5; // Random increment between 0-5%
+                        progress = Math.min(progress + increment, 100);
 
-                        // Simulate realistic download experience with various outcomes
-                        const outcomes = [
-                            'success',
-                            'network_error',
-                            'server_error',
-                            'timeout',
-                            'interrupted',
-                            'slow_connection',
-                            'file_corrupted'
-                        ];
+                        // Update progress display
+                        document.getElementById('progressFill').style.width = progress + '%';
 
-                        const randomOutcome = outcomes[Math.floor(Math.random() * outcomes.length)];
+                        // Show different messages at different progress points
+                        if (progress < 20) {
+                            document.getElementById('progressText').textContent = 'Connecting to server...';
+                        } else if (progress < 40) {
+                            document.getElementById('progressText').textContent = 'Starting download...';
+                        } else if (progress < 60) {
+                            document.getElementById('progressText').textContent = 'Downloading...';
+                        } else if (progress < 80) {
+                            document.getElementById('progressText').textContent = 'Almost there...';
+                        } else if (progress < 95) {
+                            document.getElementById('progressText').textContent = 'Finishing up...';
+                        } else {
+                            document.getElementById('progressText').textContent = 'Download complete!';
+                        }
 
-                        setTimeout(() => {
-                            // Remove progress indicator
-                            document.body.removeChild(progressContainer);
+                        // When download reaches 100%, open the download link
+                        if (progress >= 100) {
+                            clearInterval(downloadInterval);
 
-                            switch (randomOutcome) {
-                                case 'success':
-                                    alert('Download complete! File saved successfully.');
-                                    window.open(currentApp.downloadLink, '_blank');
-                                    setTimeout(closeDownloadModal, 1000);
-                                    break;
-                                case 'network_error':
-                                    alert('Network error! Please check your internet connection and try again.');
-                                    break;
-                                case 'server_error':
-                                    alert('Server error! Please try again later.');
-                                    break;
-                                case 'timeout':
-                                    alert('Download timeout! Server is not responding.');
-                                    break;
-                                case 'interrupted':
-                                    alert('Download interrupted! Please try again.');
-                                    break;
-                                case 'slow_connection':
-                                    alert('Slow connection detected! Download may take longer than usual.');
-                                    window.open(currentApp.downloadLink, '_blank');
-                                    setTimeout(closeDownloadModal, 1000);
-                                    break;
-                                case 'file_corrupted':
-                                    alert('File corrupted! Please try downloading again.');
-                                    break;
-                                default:
-                                    window.open(currentApp.downloadLink, '_blank');
-                                    setTimeout(closeDownloadModal, 1000);
-                            }
-                        }, 500);
-                    }
-                }, 200); // Update progress every 200ms
+                            // Simulate realistic download experience with various outcomes
+                            const outcomes = [
+                                'success',
+                                'network_error',
+                                'server_error',
+                                'timeout',
+                                'interrupted',
+                                'slow_connection',
+                                'file_corrupted'
+                            ];
+
+                            const randomOutcome = outcomes[Math.floor(Math.random() * outcomes.length)];
+
+                            setTimeout(() => {
+                                // Remove progress indicator
+                                document.body.removeChild(progressContainer);
+
+                                switch (randomOutcome) {
+                                    case 'success':
+                                        alert('Download complete! File saved successfully.');
+                                        window.open(currentApp.downloadLink, '_blank');
+                                        setTimeout(closeDownloadModal, 1000);
+                                        break;
+                                    case 'network_error':
+                                        alert('Network error! Please check your internet connection and try again.');
+                                        break;
+                                    case 'server_error':
+                                        alert('Server error! Please try again later.');
+                                        break;
+                                    case 'timeout':
+                                        alert('Download timeout! Server is not responding.');
+                                        break;
+                                    case 'interrupted':
+                                        alert('Download interrupted! Please try again.');
+                                        break;
+                                    case 'slow_connection':
+                                        alert('Slow connection detected! Download may take longer than usual.');
+                                        window.open(currentApp.downloadLink, '_blank');
+                                        setTimeout(closeDownloadModal, 1000);
+                                        break;
+                                    case 'file_corrupted':
+                                        alert('File corrupted! Please try downloading again.');
+                                        break;
+                                    default:
+                                        window.open(currentApp.downloadLink, '_blank');
+                                        setTimeout(closeDownloadModal, 1000);
+                                }
+                            }, 500);
+                        }
+                    }, 200); // Update progress every 200ms
+                }
             }
         });
 
